@@ -1,0 +1,33 @@
+<nav>
+    <div class="nav-wrapper">
+        <img src="/img/logo.svg"  alt="" class="nav-img">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#if isHome}}
+                <li class="active"><a  class="btn">Главная</a>
+                </li>
+            {{else}}
+                <li><a href="/" class="btn">Главная</a></li>
+            {{/if}}
+
+            {{#if isCourses}}
+                <li class="active"><a href="/courses" class="btn">Курсы</a></li>
+            {{else}}
+                <li><a href="/courses" class="btn">Курсы</a></li>
+            {{/if}}
+
+            {{#if isAdd}}
+                <li class="active"><a href="/add" class="btn">Добавить курс</a></li>
+            {{else}}
+                <li><a href="/add" class="btn">Добавить курс</a></li>
+            {{/if}}
+
+            {{#if isCard}}
+                <li class="active"><a href="/card" class="btn">Коризна</a></li>
+            {{else}}
+                <li><a href="/card" class="btn">Коризна</a></li>
+            {{/if}}
+
+        </ul>
+    </div>
+</nav>
